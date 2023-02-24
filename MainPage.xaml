@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="MemoryGame.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MemoryGame"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+    
+    
+    <Grid x:Name="grid" Background="AntiqueWhite" RequestedTheme="Light">
+
+       
+
+        <TextBlock x:Name="MemoGame" Text="Memory Game" FontSize="140" FontWeight="Bold" Margin="588,153,507,698" FontFamily="Monotype Corsiva" FocusVisualPrimaryBrush="{x:Null}"/>
+        <TextBlock x:Name="LevelPick" Text="Pick Level:" TextAlignment="Center" FontSize="80"  Margin="791,358,723,544" FontFamily="Monotype Corsiva" FocusVisualPrimaryBrush="{x:Null}"/>
+        <ComboBox x:Name="ComboLevel" FontFamily="Monotype Corsiva" FontWeight="Bold" Height="87" Width="408" FontSize="40" Margin="791,453,0,0">
+            <ComboBoxItem x:Name="Level1" Content="Level 1"/>
+            <ComboBoxItem x:Name="Level2" Content="Level 2"/>
+            <ComboBoxItem x:Name="Level3" Content="Level 3"/>
+        </ComboBox>
+        <TextBlock x:Name="SubjectlPick" Text="Pick Subject:" TextAlignment="Center" FontSize="80"  Margin="791,602,723,300" FontFamily="Monotype Corsiva" FocusVisualPrimaryBrush="{x:Null}"/>
+        <ComboBox x:Name="ComboSubject" FontFamily="Monotype Corsiva" FontWeight="Bold" Height="87" Width="408" FontSize="40" Margin="791,697,0,0" >
+            <ComboBoxItem x:Name="Sub1" Content="Flags"/>
+            <ComboBoxItem x:Name="Sub2" Content="Games"/>
+        </ComboBox>
+        <Button x:Name="start" Content="Start" FontFamily="Monotype Corsiva" FontSize="70" Background="Transparent" Margin="853,887,0,0" VerticalAlignment="Top" Height="81" Width="285" Click="Button_Click"/>
+    </Grid>
+</Page>
