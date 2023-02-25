@@ -26,5 +26,10 @@ namespace MemoryGame
         {
             this.InitializeComponent();
         }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
+        }
     }
 }

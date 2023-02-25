@@ -7,12 +7,12 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    
-    
-    
+
+
+
     <Grid x:Name="grid" Background="AntiqueWhite" RequestedTheme="Light">
 
-       
+
 
         <TextBlock x:Name="MemoGame" Text="Memory Game" FontSize="140" FontWeight="Bold" Margin="588,153,507,698" FontFamily="Monotype Corsiva" FocusVisualPrimaryBrush="{x:Null}"/>
         <TextBlock x:Name="LevelPick" Text="Pick Level:" TextAlignment="Center" FontSize="80"  Margin="791,358,723,544" FontFamily="Monotype Corsiva" FocusVisualPrimaryBrush="{x:Null}"/>
@@ -26,6 +26,6 @@
             <ComboBoxItem x:Name="Sub1" Content="Flags"/>
             <ComboBoxItem x:Name="Sub2" Content="Games"/>
         </ComboBox>
-        <Button x:Name="start" Content="Start" FontFamily="Monotype Corsiva" FontSize="70" Background="Transparent" Margin="853,887,0,0" VerticalAlignment="Top" Height="81" Width="285" Click="Button_Click"/>
+        <Button x:Name="start" Content="Start" FontFamily="Monotype Corsiva" FontSize="70" Background="Transparent" Margin="852,825,0,0" VerticalAlignment="Top" Height="81" Width="285" Click="Button_Click"/>
     </Grid>
 </Page>

@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Page_Loaded">
 
-    <Grid Background="#FF8C6988" x:Name="my_G" RequestedTheme="Light">
+    <Grid Background="Wheat"  x:Name="my_G" RequestedTheme="Light">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="4*"/>
@@ -23,7 +23,7 @@
 
         </Grid.RowDefinitions>
 
-        <Grid x:Name="Game_Grid" Grid.Row="1" Grid.Column="1" Background="Blue">
+        <Grid x:Name="Game_Grid" Grid.Row="1" Grid.Column="1" Background="AntiqueWhite">
 
         </Grid>
 

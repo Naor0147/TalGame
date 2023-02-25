@@ -175,6 +175,7 @@
     <Content Include="Assets\GAMES\GAME9.png" />
     <Content Include="Assets\GAMES\GMAE5.png" />
     <Content Include="Assets\golden-wheat-field-and-sunny-day.png" />
+    <Content Include="BACK.png" />
     <Content Include="def_back_card.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
@@ -205,7 +206,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>6.2.12</Version>
+      <Version>6.2.14</Version>
     </PackageReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

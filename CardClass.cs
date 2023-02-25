@@ -23,7 +23,7 @@ namespace MemoryGame
         private Button button1;
         private Button button2;
 
-        private string _defimageAdress = $"ms-appx:///def_back_card.png";
+        private string _defimageAdress = $"ms-appx:///BACK.png";
         private Windows.UI.Xaml.Controls.Image def_img;
         public CardClass(Windows.UI.Xaml.Controls.Image image, int[] pos1, int[] pos2)
         {
