@@ -10,7 +10,7 @@
 
 
 
-    <Grid x:Name="grid" Background="AntiqueWhite" RequestedTheme="Light">
+    <Canvas x:Name="grid" Background="AntiqueWhite" RequestedTheme="Light">
 
 
 
@@ -26,6 +26,6 @@
             <ComboBoxItem x:Name="Sub1" Content="Flags"/>
             <ComboBoxItem x:Name="Sub2" Content="Games"/>
         </ComboBox>
-        <Button x:Name="start" Content="Start" FontFamily="Monotype Corsiva" FontSize="70" Background="Transparent" Margin="852,825,0,0" VerticalAlignment="Top" Height="81" Width="285" Click="Button_Click"/>
-    </Grid>
+        <Button x:Name="start" Content="Start" FontFamily="Monotype Corsiva" FontSize="70" Background="Transparent" Margin="852,849,0,0" VerticalAlignment="Top" Height="81" Width="285" Click="Button_Click"/>
+    </Canvas>
 </Page>
