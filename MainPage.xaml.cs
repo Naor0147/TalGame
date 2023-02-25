@@ -50,6 +50,7 @@ namespace MemoryGame
 
                 Data data = new Data(subject, level);
                 Frame.Navigate(typeof(MemoGame), data);
+               
             }
         }
     }

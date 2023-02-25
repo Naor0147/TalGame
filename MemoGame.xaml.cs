@@ -1,16 +1,19 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
@@ -42,6 +45,7 @@ namespace MemoryGame
             DispatcherTimer.Interval = TimeSpan.FromMilliseconds(1);
             DispatcherTimer.Start();
             DispatcherTimer.Tick += DispatcherTimer_Tick;
+
         }
 
         private void DispatcherTimer_Tick(object sender, object e)
@@ -85,8 +89,19 @@ namespace MemoryGame
                 }
 
             }
-            Frame.Navigate(typeof(WinPage));
+            
+            nav();
         }
+
+
+
+        public void nav()
+        {
+            Frame.Navigate(typeof(WinpageTry));
+           
+           
+        }
+
 
         public void buildTheRandomPhotos(List<Image> ImageList)
         {
@@ -180,7 +195,8 @@ namespace MemoryGame
             buildGrid();
             Photos= getPhotosList();
             buildTheRandomPhotos(Photos);
-            
+           
+
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)

@@ -1,23 +1,25 @@
 ﻿<Page
-    x:Class="MemoryGame.WinPage"
+    x:Class="MemoryGame.WinpageTry"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:MemoryGame"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Light">
+    Background="{StaticResource FocusVisualBlackStrokeThemeBrush}">
 
-    <Grid Background="AntiqueWhite">
+    
+    <Grid Background="AntiqueWhite" RequestedTheme="Light" >
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition Height="0.5*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        
-        <TextBlock x:Name="Congrats" Text="Congratulations" FontSize="140" FontWeight="Bold" Grid.Row="1" FontFamily="Monotype Corsiva" FocusVisualPrimaryBrush="{x:Null}"/>
+
+        <TextBlock x:Name="Congrats" Text="Congratulations" FontSize="140" FontWeight="Bold" Grid.Row="0" HorizontalAlignment="Center"  FontFamily="Monotype Corsiva" FocusVisualPrimaryBrush="{x:Null}"/>
         <TextBlock x:Name="Won" Text="You Have Won !!!" FontSize="100" FontWeight="Bold" Grid.Row="1" TextAlignment="Center" FontFamily="Monotype Corsiva" FocusVisualPrimaryBrush="{x:Null}"/>
-        <Button x:Name="Back" Content="Play Again" FontFamily="Monotype Corsiva" FontSize="70" Background="Transparent" Grid.Row="2" VerticalAlignment="Top" Height="81" Width="385" Click="Back_Click"/>
 
     </Grid>
+    
 </Page>
